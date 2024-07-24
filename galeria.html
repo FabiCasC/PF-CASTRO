@@ -3,34 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Delitaste - Galería</title>
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contáctanos</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Delitaste</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contáctanos</a></li>
+                    </ul>
+                </div> 
+            </div>
         </nav>
     </header>
-    <main>
-        <h1>Un poco de Delitaste</h1>
-        <section class="gallery">
-            <div class="image-container"><img src="img/img1.jpg" alt="Imagen 1"></div>
-            <div class="image-container"><img src="img/img2.jpg" alt="Imagen 2"></div>
-            <div class="image-container"><img src="img/img3.jpg" alt="Imagen 3"></div>
-            <div class="image-container"><img src="img/img4.jpg" alt="Imagen 4"></div>
-            <div class="image-container"><img src="img/img5.jpg" alt="Imagen 5"></div>
-            <div class="image-container"><img src="img/img6.jpg" alt="Imagen 6"></div>
-        </section>
+    <main class="container my-5">
+        <div class="text-center">
+            <h1>Un poco de Delitaste</h1>
+            <section class="row">
+                <div class="col-md-4 mb-4 image-container"><img src="img/img1.jpg" alt="Imagen 1" class="img-fluid"></div>
+                <div class="col-md-4 mb-4 image-container"><img src="img/img2.jpg" alt="Imagen 2" class="img-fluid"></div>
+                <div class="col-md-4 mb-4 image-container"><img src="img/img3.jpg" alt="Imagen 3" class="img-fluid"></div>
+                <div class="col-md-4 mb-4 image-container"><img src="img/img4.jpg" alt="Imagen 4" class="img-fluid"></div>
+                <div class="col-md-4 mb-4 image-container"><img src="img/img5.jpg" alt="Imagen 5" class="img-fluid"></div>
+                <div class="col-md-4 mb-4 image-container"><img src="img/img6.jpg" alt="Imagen 6" class="img-fluid"></div>
+            </section>
+        </div>
     </main>
-    <footer>
+    <footer class="bg-light text-center py-3">
         <p>Delitaste Copyright</p>
     </footer>
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 

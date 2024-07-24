@@ -1,102 +1,51 @@
-/* Estilos básicos */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f4f4f4;
+.container-fluid{
+    background-color: #faae2b; /* Azul oscuro */
+    height: 60px; /* Aumenta la altura de la barra de navegación a 60px */
+    font-size: 18px; /* Aumenta el tamaño de la fuente a 18px */
 }
 
-/* Encabezado */
-header {
-    background-color: #6200ea;
-    padding: 10px 0;
+.navbar-brand {
+    color: #00473e; /* Blanco */
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+.nav-link {
+    color: #00473e; /* Blanco */
 }
 
-nav ul li {
-    margin: 0 15px;
+.bg-main {
+    background-color: #f2f7f5;
 }
 
-nav ul li a {
-    text-decoration: none;
+.text-headline {
+    color: #00473e;
+}
+
+.text-paragraph {
+    color: #475d5b;
+}
+
+.btn-primary {
+    background-color: #faae2b;
+    color: #00473e;
+}
+
+.btn-primary:hover {
+    background-color: #e0a922;
     color: #fff;
-    font-weight: bold;
 }
 
-/* Contenido principal */
-main {
-    padding: 20px;
-    text-align: center;
+.stroke-illustration {
+    stroke: #00332c;
 }
 
-h1, h2 {
-    color: #333;
+.highlight {
+    background-color: #faae2b;
 }
 
-p {
-    color: #555;
+.bg-secondary {
+    background-color: #ffa8ba;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.bg-tertiary {
+    background-color: #fa5246;
 }
-
-ul li {
-    margin: 10px 0;
-    color: #333;
-}
-
-/* Contenedores de multimedia */
-.image-container, .video-container, .map-container {
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #ccc;
-    padding: 10px;
-    background-color: #fff;
-}
-
-.image-container img, .map-container img, .video-container video {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Botones */
-button {
-    background-color: #6200ea;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #3700b3;
-}
-
-/* Formulario */
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-
