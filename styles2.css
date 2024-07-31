@@ -1,0 +1,51 @@
+.container-fluid{
+    background-color: #faae2b; /* Azul oscuro */
+    height: 60px; /* Aumenta la altura de la barra de navegación a 60px */
+    font-size: 18px; /* Aumenta el tamaño de la fuente a 18px */
+}
+
+.navbar-brand {
+    color: #00473e; /* Blanco */
+}
+
+.nav-link {
+    color: #00473e; /* Blanco */
+}
+
+.bg-main {
+    background-color: #f2f7f5;
+}
+
+.text-headline {
+    color: #00473e;
+}
+
+.text-paragraph {
+    color: #475d5b;
+}
+
+.btn-primary {
+    background-color: #faae2b;
+    color: #00473e;
+}
+
+.btn-primary:hover {
+    background-color: #e0a922;
+    color: #fff;
+}
+
+.stroke-illustration {
+    stroke: #00332c;
+}
+
+.highlight {
+    background-color: #faae2b;
+}
+
+.bg-secondary {
+    background-color: #ffa8ba;
+}
+
+.bg-tertiary {
+    background-color: #fa5246;
+}

@@ -1,0 +1,128 @@
+// Variables de colores
+$naranja: #faae2b;
+$blanco: #ffffff;
+$gris-claro: #475d5b;
+$gris-oscuro:  #00473e;
+
+// Mixin para estilos de botones
+@mixin button-styles {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background: $naranja;
+    }
+
+// Función para calcular el contraste de color
+@function contrast-color($color) {
+    $contrast: if(lightness($color) > 50, #000, #fff);
+    @return $contrast;
+    }
+
+// Estilos
+.navbar {
+    background-color: $naranja; // color de fondo de la navbar
+    height: 60px; // altura de la navbar
+    font-size: 18px; // tamaño de fuente de la navbar
+    @media (max-width: 768px) {
+        height: 40px; // altura de la navbar en dispositivos móviles
+    }
+}
+
+.navbar-brand {
+  color: $gris-oscuro; // color del texto de la marca
+}
+
+.nav-link {
+    color: $gris-claro; // color del texto de los links
+    &:hover {
+        color: $blanco;
+    }
+    @media (max-width: 768px) {
+        font-size: 14px; // tamaño de fuente de los links en dispositivos móviles
+    }
+}
+
+.bg-main {
+    background-color: $naranja;
+}
+
+.text-headline {
+    color: $blanco;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    @media (max-width: 768px) {
+        font-size: 18px; // tamaño de fuente de los títulos en dispositivos móviles
+    }
+}
+
+.text-paragraph {
+    color: $naranja;
+    font-size: 18px;
+    margin-bottom: 20px;
+    @media (max-width: 768px) {
+        font-size: 14px; // tamaño de fuente de los párrafos en dispositivos móviles
+    }
+    }
+
+.btn-primary {
+    background-color: $naranja;
+    color: $blanco;
+    @include button-styles;
+    &:hover {
+        background-color: $naranja;
+        color: #fff;
+    }
+    @media (max-width: 768px) {
+        padding: 5px 10px; // padding del botón en dispositivos móviles
+    }
+    }
+
+.stroke-illustration {
+    stroke: $naranja;
+}
+
+.highlight {
+    background-color: $naranja;
+}
+
+.bg-secondary {
+    background-color: $naranja;
+}
+
+.bg-tertiary {
+    background-color: $naranja;
+}
+
+.navbar-toggler {
+    background-color: $naranja; // color de fondo del botón de toggle
+    @media (max-width: 768px) {
+      padding: 5px 10px; // padding del botón de toggle en dispositivos móviles
+      border: none; // quitar borde del botón de toggle
+    &:focus {
+        box-shadow: none; // quitar sombra del botón de toggle cuando se enfoca
+    }
+    }
+}
+
+  // Agregar estilos para que el navbar-collapse se despliegue correctamente
+.navbar-collapse {
+    @media (max-width: 768px) {
+      display: none; // ocultar el navbar-collapse por defecto en dispositivos móviles
+    }
+}
+
+.navbar-toggler:not(.collapsed) {
+    @media (max-width: 768px) {
+    +.navbar-collapse {
+        display: block; // mostrar el navbar-collapse cuando se hace clic en el botón de toggle
+    }
+    }
+}
+.bg-light {
+    background-color: $naranja;
+}
